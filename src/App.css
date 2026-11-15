@@ -1,0 +1,153 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #ffffff;
+  color: #ff6600;
+  text-align: center;
+  padding: 35px 20px;
+  border-bottom: 3px solid #ff6600;
+}
+
+.header h1 {
+  color: #ff6600;
+  margin: 0 0 10px;
+  font-size: 32px;
+}
+
+.header p {
+  color: #333333;
+  margin: 0;
+  font-size: 17px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.form-section,
+.projects-section {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  margin-top: 0;
+  color: #222;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e65c00;
+}
+
+.search-section {
+  margin-bottom: 25px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.project-image {
+  height: 150px;
+  background: #ffe0cc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cc5200;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.project-content {
+  padding: 18px;
+}
+
+.project-content h3 {
+  margin-top: 0;
+  color: #ff6600;
+}
+
+.project-content p {
+  line-height: 1.5;
+}
+
+.empty-message {
+  color: #777;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 25px;
+  }
+
+  .container {
+    width: 94%;
+  }
+
+  .form-section,
+  .projects-section {
+    padding: 18px;
+  }
+}
